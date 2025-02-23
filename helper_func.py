@@ -22,7 +22,7 @@ async def is_subscribed(filter, client, update):
 
     member_status = (ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER)
 
-    channels_1 = await present_channel()  # Fetch the channels from the database
+    channels_1 = await present_channel()   # Fetch the channels from the database
     channels_2 = await present_channel2()  # Fetch the channels from the database
     channels_3 = await present_channel3()  # Fetch the channels from the database
     channels_4 = await present_channel4()  # Fetch the channels from the database
