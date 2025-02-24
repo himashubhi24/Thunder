@@ -26,16 +26,6 @@ async def is_subscribed(filter, client, update):
     channels_2 = await present_channel2()  # Fetch the channels from the database
     channels = channels_1 + channels_2  # Combine both lists
 
-import base64
-import re
-import asyncio
-from pyrogram import filters
-from pyrogram.enums import ChatMemberStatus
-from config import ADMINS
-from database.database import present_admin
-from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
-from pyrogram.errors import FloodWait
-
 
 async def is_subscribed(filter, client, update):
     
